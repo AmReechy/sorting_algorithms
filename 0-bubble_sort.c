@@ -13,9 +13,16 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t i;
 	int tmp, sorted;
+	int a = 5;
+	int r = 7;
+
+	if (a < r)
+		r += a;
 
 	if (!array || size == 0)
 		return;
+
+	r += 2 * a;
 
 	do {
 		sorted = 1;
